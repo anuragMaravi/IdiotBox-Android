@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">Idiot Box</string>
+    <string name="action_settings">Settings</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_movies">Movies</string>
+    <string name="nav_tv_shows">Tv Shows</string>
+    <string name="nav_people">People</string>
+
+    <string name="activity_title_about_us">About Us</string>
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="dot">• </string>
+    <string name="search_hint">Search</string>
+    <string name="search">Search</string>
+    <string name="no_internet">Some error occurred!\n Please check your internet connection.</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">Language &amp; Country</string>
+
+    <string name="pref_title_social_recommendations">Enable adult content</string>
+    <string name="pref_description_social_recommendations">Search and view adult contents
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Select country</string>
+    <string-array name="pref_example_list_titles">
+        <item>None</item>
+        <item>Australia</item>
+        <item>Canada</item>
+        <item>China</item>
+        <item>Germany</item>
+        <item>France</item>
+        <item>India</item>
+        <item>Japan</item>
+        <item>Romania</item>
+        <item>Russia</item>
+        <item>Turkey</item>
+        <item>United Kingdom</item>
+        <item>United States</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item></item>
+        <item>AU</item>
+        <item>CA</item>
+        <item>CN</item>
+        <item>DE</item>
+        <item>FR</item>
+        <item>IN</item>
+        <item>JP</item>
+        <item>RO</item>
+        <item>RU</item>
+        <item>TR</item>
+        <item>GB</item>
+        <item>US</item>
+    </string-array>
+    <string name="pref_title_country_default_value">US</string>
+
+
+    <string name="pref_title_language">Select language</string>
+    <string-array name="pref_list_language">
+        <item>Chinese - 中文, 汉语, 漢語</item>
+        <item>English</item>
+        <item>French - français</item>
+        <item>German - Deutsch</item>
+        <item>Indonesian - Bahasa Indonesia</item>
+        <item>Japanese - 日本語 (にほんご)</item>
+        <item>Korean - 한국어</item>
+        <item>Portuguese - Português</item>
+        <item>Russian - Русский</item>
+        <item>Spanish - Español</item>
+        <item>Turkish - Türkçe</item>
+    </string-array>
+    <string-array name="pref_list_language_values">
+        <item>zh</item>
+        <item>en</item>
+        <item>fr</item>
+        <item>de</item>
+        <item>id</item>
+        <item>ja</item>
+        <item>ko</item>
+        <item>pt</item>
+        <item>ru</item>
+        <item>es</item>
+        <item>tr</item>
+    </string-array>
+    <string name="pref_title_language_default_value">en</string>
+
+
+    <!-- Example settings for Data & pref_title_language_default_valueSync -->
+    <string name="pref_header_data_sync">Images &amp; Videos</string>
+
+    <string name="pref_title_sync_frequency">Image Quality</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>Default</item>
+        <item>Very Low</item>
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+        <item>Very High</item>
+        <item>Maximum</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>w342/</item>
+        <item>w154/</item>
+        <item>w185/</item>
+        <item>w342/</item>
+        <item>w500/</item>
+        <item>w780/</item>
+        <item>original/</item>
+    </string-array>
+    <string name="pref_image_default_value">w342/</string>
+
+    <string name="pref_youtube_thumbnail">Video Thumbnail Quality</string>
+    <string-array name="pref_youtube_thumbnail">
+        <item>Default</item>
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+        <item>Very High</item>
+    </string-array>
+    <string-array name="pref_youtube_thumbnail_values">
+        <item>/sddefault.jpg</item>
+        <item>/mqdefault.jpg</item>
+        <item>/sddefault.jpg</item>
+        <item>/hqdefault.jpg</item>
+        <item>/maxresdefault.jpg</item>
+    </string-array>
+    <string name="pref_youtube_thumbnail_default_value">/sddefault.jpg</string>
+
+
+    <!-- Ad Unit Id-->
+    <string name="banner_ad_unit_id">ca-app-pub-3259009684379327/8932552299</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+</resources>

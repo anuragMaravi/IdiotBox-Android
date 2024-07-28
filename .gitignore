@@ -1,0 +1,96 @@
+# Android Studio
+.gradle/
+.idea/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+*.iml
+
+# IntelliJ
+*.ipr
+*.iws
+*.idea/
+misc.xml
+modules.xml
+workspace.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+
+# Keystore files
+*.jks
+
+# Gradle
+.gradle/
+build/
+gradle-app.setting
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+out/
+
+# Kotlin
+*.kotlin_metadata
+*.kotlin_module
+
+# Log files
+*.log
+
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Linux
+*~
+
+# IDE files
+*.swp
+*~.nib
+.idea/misc.xml
+.idea/modules.xml
+.idea/workspace.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/navEditor.xml
+*.iml
+
+# Ignore apikey.properties
+apikey.properties
+
+# Android specific
+local.properties
+logcat
+*.hprof
+
+# Google Services
+/google-services.json
+/google-services*.json
+
+# Firebase Crashlytics
+crashlytics.properties
+fabric.properties
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+
+# Others
+**/build/
+**/out/
+*.log
+.idea
+*.iml
+*.ipr
+*.iws
+*.hprof
+*.orig
+*.so
+*.swp
