@@ -108,28 +108,32 @@ public class SearchActivity extends AppCompatActivity implements SearchView.OnQu
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_search, menu);
         menuItem = menu.findItem(R.id.search);
-        menuItem.expandActionView();
-        MenuItemCompat.setOnActionExpandListener(menuItem,
-                new MenuItemCompat.OnActionExpandListener() {
-                    @Override
-                    public boolean onMenuItemActionExpand(MenuItem menuItem) {
-                        return true;
-                    }
 
-                    @Override
-                    public boolean onMenuItemActionCollapse(MenuItem menuItem) {
-                        onBackPressed();
-                        return false;
-                    }
-                });
+        // Expand the search view and set listeners
+        menuItem.expandActionView();
+        MenuItemCompat.setOnActionExpandListener(menuItem, new MenuItemCompat.OnActionExpandListener() {
+            @Override
+            public boolean onMenuItemActionExpand(MenuItem menuItem) {
+                return true;
+            }
+
+            @Override
+            public boolean onMenuItemActionCollapse(MenuItem menuItem) {
+                onBackPressed();
+                return false;
+            }
+        });
+
         if (NetworkUtils.isNetworkConnected(getApplicationContext())) {
-            searchView = (SearchView) MenuItemCompat.getActionView(menuItem);
-            searchView.setQueryHint("Search movies and tv shows");
-            searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
-            searchView.setIconifiedByDefault(true);
-            searchView.setOnQueryTextListener(this);
-            searchView.setOnCloseListener(this);
-            searchView.requestFocus();
+            searchView = (SearchView) menuItem.getActionView();
+            if (searchView != null) {
+                searchView.setQueryHint("Search movies and tv shows");
+                searchView.setSearchableInfo(searchManager.getSearchableInfo(getComponentName()));
+                searchView.setIconifiedByDefault(true);
+                searchView.setOnQueryTextListener(this);
+                searchView.setOnCloseListener(this);
+                searchView.requestFocus();
+            }
         }
         return true;
     }

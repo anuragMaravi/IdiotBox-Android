@@ -42,10 +42,11 @@
         <activity
             android:name=".ui.activities.SearchActivity"
             android:launchMode="singleTop"
-            android:theme="@style/MovieDetails">
+            android:theme="@style/MovieDetails"
+            android:windowSoftInputMode="adjustResize|stateVisible">
             <meta-data
                 android:name="android.app.default_searchable"
-                android:value=".ui.search.SearchActivity" />
+                android:value=".ui.activities.SearchActivity" />
         </activity>
 
         <activity

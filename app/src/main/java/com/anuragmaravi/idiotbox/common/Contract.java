@@ -9,7 +9,6 @@ public class Contract {
     }
 
     public static final String API_KEY = BuildConfig.TMDB_API_KEY;
-//    public static final String API_KEY = "0744794205a0d39eef72cad8722d4fba";
 
     // Base Url
     public static final String API_URL = "https://api.themoviedb.org/3/";

@@ -1,6 +1,7 @@
 package com.anuragmaravi.idiotbox.ui.adapters.search;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.anuragmaravi.idiotbox.ui.activities.MovieDetailsActivity;
 import com.bumptech.glide.Glide;
 import com.anuragmaravi.idiotbox.R;
 import com.anuragmaravi.idiotbox.model.SearchResults;
@@ -51,18 +53,19 @@ public class SearchResultAdapter extends RecyclerView.Adapter<SearchResultAdapte
             holder.textViewType.setTextColor(mContext.getResources().getColor(R.color.tv_show_accent));
         }
 
-//        holder.itemView.setOnClickListener(v -> {
-//            Intent intent;
-//            if (result.getMediaType().equals("movie")) {
-//                intent = new Intent(mContext, MovieDetailsActivity.class);
-//                intent.putExtra("movie_id", result.getId());
-//            } else {
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = null;
+            if (result.getMediaType().equals("movie")) {
+                intent = new Intent(mContext, MovieDetailsActivity.class);
+                intent.putExtra("movie_id", result.getId());
+            } 
+//            else {
 //                intent = new Intent(mContext, TvShowDetailsActivity.class);
 //                intent.putExtra("tvshow_id", result.getId());
 //            }
-//            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//            mContext.startActivity(intent);
-//        });
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            mContext.startActivity(intent);
+        });
     }
 
     @Override
@@ -76,11 +79,11 @@ public class SearchResultAdapter extends RecyclerView.Adapter<SearchResultAdapte
 
         MyViewHolder(View view) {
             super(view);
-//            imageViewSearchPoster = view.findViewById(R.id.imageViewSearchPoster);
-//            textViewName = view.findViewById(R.id.textViewName);
-//            textViewDate = view.findViewById(R.id.textViewDate);
-//            textViewType = view.findViewById(R.id.textViewType);
-//            textViewVoteAverage = view.findViewById(R.id.textViewVoteAverage);
+            imageViewSearchPoster = view.findViewById(R.id.imageViewSearchPoster);
+            textViewName = view.findViewById(R.id.textViewName);
+            textViewDate = view.findViewById(R.id.textViewDate);
+            textViewType = view.findViewById(R.id.textViewType);
+            textViewVoteAverage = view.findViewById(R.id.textViewVoteAverage);
         }
     }
 }

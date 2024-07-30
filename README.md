@@ -1,4 +1,4 @@
-# IdiotBox
+# IdiotBox-Android
 
 [![License](https://img.shields.io/badge/license-Custom-blue.svg)](LICENSE)
 
