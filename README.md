@@ -14,7 +14,9 @@ IdiotBox is an Android application that allows users to browse and explore popul
 
 ## Screenshots
 
-![home.png](screenshots/home.png)
+| Home Screen | Movie Details                              | Movie Details                              | Actor Details                           |
+| ----------- |--------------------------------------------|--------------------------------------------|-----------------------------------------|
+| ![Home Screen](screenshots/home.png) | ![Movie Details](screenshots/detail_1.png) | ![Movie Details](screenshots/detail_2.png) | ![Actor Details](screenshots/actor.png) |
 
 ## Prerequisites
 
