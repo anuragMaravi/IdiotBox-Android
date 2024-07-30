@@ -57,5 +57,9 @@
             android:name=".ui.activities.CastDetailsActivity"
             android:theme="@style/MovieDetails" />
 
+        <activity
+            android:name=".ui.activities.GenreListActivity"
+            android:theme="@style/MovieDetails" />
+
     </application>
 </manifest>
