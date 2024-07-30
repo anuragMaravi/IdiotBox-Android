@@ -1,6 +1,7 @@
 package com.anuragmaravi.idiotbox.ui.adapters.details;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.anuragmaravi.idiotbox.R;
 //import com.anuragmaravi.idiotbox.ui.details.GenreListActivity;
 import com.anuragmaravi.idiotbox.model.Movie;
+import com.anuragmaravi.idiotbox.ui.activities.GenreListActivity;
 
 import java.util.List;
 
@@ -35,13 +37,13 @@ public class GenreAdapter extends RecyclerView.Adapter<GenreAdapter.MyViewHolder
     public void onBindViewHolder(MyViewHolder holder, int position) {
         final Movie movie = movieList.get(position);
         holder.buttonGenre.setText(movie.getGenreName());
-//        holder.itemView.setOnClickListener(v -> {
-//            Intent intent = new Intent(mContext, GenreListActivity.class);
-//            intent.putExtra("genre_id", movie.getGenreId());
-//            intent.putExtra("genre_name", movie.getGenreName());
-//            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-//            mContext.startActivity(intent);
-//        });
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(mContext, GenreListActivity.class);
+            intent.putExtra("genre_id", movie.getGenreId());
+            intent.putExtra("genre_name", movie.getGenreName());
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            mContext.startActivity(intent);
+        });
     }
 
     @Override
