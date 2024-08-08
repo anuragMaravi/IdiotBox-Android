@@ -190,6 +190,7 @@
                 android:background="#fff"
                 android:id="@+id/textViewOverview"
                 android:text="Overview"
+                android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingLeft="16dp"
